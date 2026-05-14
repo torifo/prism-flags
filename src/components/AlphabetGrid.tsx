@@ -21,7 +21,7 @@ export function AlphabetGrid({ activeLetter }: { activeLetter?: string }) {
             ? `${base} bg-surface2 text-primary border-theme hover:border-purple hover:text-purple-light`
             : `${base} bg-surface2 text-muted border-[var(--bar-off)] cursor-default`;
 
-          if (!hasData) {
+          if (!hasData && !isActive) {
             return (
               <span key={letter} className={style}>
                 {letter.toUpperCase()}
