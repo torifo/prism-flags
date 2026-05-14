@@ -63,7 +63,7 @@ export function CompareMatrix({ flag }: { flag: Flag }) {
           <tbody>
             {rows.map(row => (
               <tr key={row.tool} className="border-b border-theme last:border-0">
-                <td className="px-2 py-1.5 text-purple-light font-semibold">{row.tool}</td>
+                <td className="px-2 py-1.5 text-purple-light font-semibold">{TOOLS.find(t => t.id === row.tool)?.label ?? row.tool}</td>
                 <td className="px-2 py-1.5 font-mono text-primary">{row.syntax}</td>
                 <td className="px-2 py-1.5 text-dim">{row.description}</td>
                 <td className="px-2 py-1.5">
