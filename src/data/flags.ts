@@ -113,7 +113,6 @@ export const FLAGS: Flag[] = [
     summary: 'ディレクトリを再帰的に処理する',
     tools: [
       { tool: 'npm',    syntax: 'npm ls -r',          description: '依存関係を再帰的にリスト表示',         impact: 1 },
-      { tool: 'docker', syntax: 'docker build --no-cache', description: '（再帰概念なし、類似オプション）', impact: 2 },
     ],
   },
   {
